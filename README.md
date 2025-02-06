@@ -15,8 +15,8 @@ Run the following command to install the script of pyenv \
 
 Run the following commands to set environment variables for pyenv \
 `echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc` \
-`echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc` \ 
-`echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n eval "$(pyenv init -)"\nfi' >> ~/.bashrc` \
+`echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc` \
+`echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n eval "$(pyenv init -)"\nfi' >> ~/.bashrc` 
 
 Restart the shell to begin using pyenv \
 `exec "$SHELL"`
@@ -27,7 +27,7 @@ Ensure that pyenv was successfully installed by running the following command \
 
 Once pyenv has been successfully installed there are two versions of python that will need to be utilized for this project. 3.7.6 and 3.9.13. To install these versions type the following commands. \
 `pyenv install 3.7.6` \
-`pyenv install 3.9.13` \
+`pyenv install 3.9.13`
 
 Ensure that each version has been installed successfully by typing the following command and then you are able to star the next phase. \
 `pyenv versions`
@@ -49,7 +49,7 @@ To exit type:
 
 Now we have confirmed the proper version of python is running in our directory, we will create the virtual environment and enter it by typing the following commands. \
 `python -m venv .venv` \
-`source .venv/bin/activate` \
+`source .venv/bin/activate` 
 
 We will know this was successful if the terminal prompt is led by a (.venv) tag. From here you are able to start installing the depencies for ImageAI. \
 `pip install cython pillow>=7.0.0 numpy>=1.18.1 opencv-python>=4.1.2 torch>=1.9.0 --extra-index-url https://download.pytorch.org/whl/cpu torchvision>=0.10.0 --extra-index-url https://download.pytorch.org/whl/cpu pytest==7.1.3 tqdm==4.64.1 scipy>=1.7.3 matplotlib>=3.4.3 mock==4.0.3`
