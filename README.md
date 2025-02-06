@@ -3,7 +3,7 @@ The purpose of this script is to be able to take an image input and then be able
 
 ## Environment Setup
 ### Pyenv
-Install and Update Dependencies
+Install and Update Dependencies\n
 `sudo apt update -y`
 
 Run the following command to install all of pyenv's dependencies
